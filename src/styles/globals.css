@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Hemos añadido un tema oscuro completo.
+  - Un fondo degradado oscuro y sutil.
+  - Un patrón geométrico de fondo para un look tecnológico.
+  - El color de texto por defecto es un gris claro para mejor legibilidad.
+*/
+body {
+  color: theme('colors.gray.300');
+  background-color: #0c0f1a; /* Un azul muy oscuro como base */
+  background-image: 
+    radial-gradient(circle at 25px 25px, rgba(0, 191, 255, 0.1) 2%, transparent 0%), 
+    radial-gradient(circle at 75px 75px, rgba(0, 191, 255, 0.05) 2%, transparent 0%);
+  background-size: 100px 100px;
+}
+
+/* Estilos personalizados para los componentes de la app */
+.card {
+  @apply rounded-lg shadow-md;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-105;
+}
+
+.btn-primary {
+  @apply bg-cyan-500 hover:bg-cyan-600 text-white;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 hover:bg-gray-600 text-white;
+}

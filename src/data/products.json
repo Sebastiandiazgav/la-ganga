@@ -1,0 +1,179 @@
+[
+  {
+    "id": "tv001",
+    "nombre": "Televisor Google LED 4K TCL 43 pulgadas 43V6C",
+    "categoria": "televisor",
+    "marca": "TCL",
+    "precio": 369.76,
+    "stock": 15,
+    "caracteristicas": ["Google TV", "4K UHD", "HDR"],
+    "descripcion": "Televisor inteligente con Google TV integrado, resolución 4K y calidad de imagen superior.",
+    "link": "https://laganga.com/televisor-google-led-4k-tcl-43-43v6c.html"
+  },
+  {
+    "id": "tv002",
+    "nombre": "Televisor Google LED HD Riviera 32 pulgadas GLT32TPX9",
+    "categoria": "televisor",
+    "marca": "Riviera",
+    "precio": 174.59,
+    "stock": 20,
+    "caracteristicas": ["Google TV", "HD", "32 pulgadas"],
+    "descripcion": "Televisor compacto con Google TV, perfecto para espacios pequeños con calidad HD.",
+    "link": "https://laganga.com/televisor-google-led-hd-riviera-32-glt32tpx9.html"
+  },
+  {
+    "id": "tv003",
+    "nombre": "Televisor Google QLED Riviera 75 pulgadas GLT75TPQ10",
+    "categoria": "televisor",
+    "marca": "Riviera",
+    "precio": 1004.73,
+    "stock": 5,
+    "caracteristicas": ["QLED", "75 pulgadas", "Google TV"],
+    "descripcion": "Pantalla gigante con tecnología QLED para una experiencia de entretenimiento inmersiva.",
+    "link": "https://laganga.com/televisor-google-qled-riviera-75-glt75tpq10.html"
+  },
+  {
+    "id": "tv004",
+    "nombre": "Televisor Smart LED 4K UHD LG 55 pulgadas 55UA7500PSA",
+    "categoria": "televisor",
+    "marca": "LG",
+    "precio": 584.33,
+    "stock": 12,
+    "caracteristicas": ["4K UHD", "Smart TV", "webOS"],
+    "descripcion": "Televisor LG con resolución 4K y sistema operativo webOS para una experiencia inteligente.",
+    "link": "https://laganga.com/televisor-smart-led-4k-uhd-lgl55-55ua7500psa.html"
+  },
+  {
+    "id": "tv005",
+    "nombre": "Televisor Smart LED Crystal UHD 4K Samsung 43 pulgadas UN43DU7000",
+    "categoria": "televisor",
+    "marca": "Samsung",
+    "precio": 411.07,
+    "stock": 18,
+    "caracteristicas": ["Crystal UHD", "4K", "Smart TV"],
+    "descripcion": "Televisor Samsung con tecnología Crystal UHD para colores vibrantes y calidad 4K.",
+    "link": "https://laganga.com/televisor-smart-led-crystal-uhd-4k-samsung-43-un43du7000-pcze.html"
+  },
+  {
+    "id": "ac001",
+    "nombre": "Aire Acondicionado Split Samsung 24000 BTU Inverter AR60F24D1DWNAP",
+    "categoria": "aire_acondicionado",
+    "marca": "Samsung",
+    "precio": 804.00,
+    "stock": 8,
+    "caracteristicas": ["24000 BTU", "Inverter", "Eficiencia Energética"],
+    "descripcion": "Aire acondicionado Samsung con tecnología inverter para máximo ahorro energético.",
+    "link": "https://laganga.com/aire-acondicionado-split-samsung-24000-btu-inverter-ar60f24d1dwnap.html"
+  },
+  {
+    "id": "ac002",
+    "nombre": "Aire Acondicionado Split Samsung 12000 BTU Inverter AR60F12D1DWNAP",
+    "categoria": "aire_acondicionado",
+    "marca": "Samsung",
+    "precio": 584.00,
+    "stock": 10,
+    "caracteristicas": ["12000 BTU", "Inverter", "Control Remoto"],
+    "descripcion": "Aire acondicionado compacto Samsung ideal para habitaciones medianas con tecnología inverter.",
+    "link": "https://laganga.com/aire-acondicionado-split-samsung-12000-btu-inverter-ar60f12d1dwnap.html"
+  },
+  {
+    "id": "ac003",
+    "nombre": "Aire Acondicionado Split LG 24000 BTU Inverter VM242C9",
+    "categoria": "aire_acondicionado",
+    "marca": "LG",
+    "precio": 1006.60,
+    "stock": 6,
+    "caracteristicas": ["24000 BTU", "Inverter", "Dual Cool"],
+    "descripcion": "Aire acondicionado LG de alta capacidad con tecnología Dual Cool para enfriamiento rápido.",
+    "link": "https://laganga.com/aire-acondicionado-split-lg-24000-btu-inverter-vm242c9.html"
+  },
+  {
+    "id": "cel001",
+    "nombre": "Celular Xiaomi REDMI NOTE 14 8GB+256GB",
+    "categoria": "smartphone",
+    "marca": "Xiaomi",
+    "precio": 178.77,
+    "stock": 25,
+    "caracteristicas": ["8GB RAM", "256GB Almacenamiento", "Cámara AI"],
+    "colores": ["negro", "azul", "verde"],
+    "descripcion": "Smartphone Xiaomi con gran capacidad de almacenamiento y rendimiento optimizado para el día a día.",
+    "link": "https://laganga.com/celular-xiaomi-redmi-note-14-8gb-256gb.html"
+  },
+  {
+    "id": "lap001",
+    "nombre": "Pack Laptop HP 14-Ep0026la + Impresora Epson L1250 + Mochila + Mouse",
+    "categoria": "laptop",
+    "marca": "HP",
+    "precio": 697.14,
+    "stock": 8,
+    "caracteristicas": ["Intel Core", "14 pulgadas", "Incluye accesorios"],
+    "descripcion": "Pack completo HP con laptop, impresora y accesorios para trabajo y estudio.",
+    "link": "https://laganga.com/pack-hp14-ep0026la-impresora-epson-l1250-mochila-mouse-t.html"
+  },
+  {
+    "id": "lap002",
+    "nombre": "Pack Laptop Lenovo V15G4 + Impresora HP580 + Mochila + Mouse",
+    "categoria": "laptop",
+    "marca": "Lenovo",
+    "precio": 775.71,
+    "stock": 5,
+    "caracteristicas": ["Procesador AMD", "15.6 pulgadas", "Pack completo"],
+    "descripcion": "Solución completa Lenovo para productividad con laptop, impresora y accesorios incluidos.",
+    "link": "https://laganga.com/pack-laptop-lenovo-v15g4-impresora-hp580-gratis-mochila-y-mouse.html"
+  },
+  {
+    "id": "lav001",
+    "nombre": "Lavadora Semiautomática Mabe 16Kg LMDX6124HBAB0",
+    "categoria": "lavadora",
+    "marca": "Mabe",
+    "precio": 248.63,
+    "stock": 12,
+    "caracteristicas": ["16Kg capacidad", "Semiautomática", "Eficiente"],
+    "descripcion": "Lavadora Mabe de gran capacidad, ideal para familias numerosas con sistema semiautomático.",
+    "link": "https://laganga.com/lavadora-semi-automatica-mabe-16kg-lmdx6124hbab0.html"
+  },
+  {
+    "id": "lav002",
+    "nombre": "Lavadora Carga Superior Mabe 19KG LME9120WDGAB0",
+    "categoria": "lavadora",
+    "marca": "Mabe",
+    "precio": 452.62,
+    "stock": 8,
+    "caracteristicas": ["19Kg capacidad", "Carga superior", "Múltiples programas"],
+    "descripcion": "Lavadora automática Mabe de alta capacidad con carga superior y múltiples programas de lavado.",
+    "link": "https://laganga.com/lavadora-carga-superior-mabe-19kg-lme9120wdgab0.html"
+  },
+  {
+    "id": "ref001",
+    "nombre": "Refrigeradora Side By Side LG 694L VS25VVNW",
+    "categoria": "refrigeradora",
+    "marca": "LG",
+    "precio": 1447.42,
+    "stock": 4,
+    "caracteristicas": ["694L capacidad", "Side by Side", "Dispensador de agua"],
+    "descripcion": "Refrigeradora LG de gran capacidad con diseño side by side y dispensador de agua integrado.",
+    "link": "https://laganga.com/refrigeradora-side-by-side-lg-694l-vs25vvnw.html"
+  },
+  {
+    "id": "coc001",
+    "nombre": "Combo Cocina a Gas Mabe 4 Quemadores 24 pulgadas EM6060FX3 + Cilindro",
+    "categoria": "cocina",
+    "marca": "Mabe",
+    "precio": 325.15,
+    "stock": 15,
+    "caracteristicas": ["4 quemadores", "24 pulgadas", "Incluye cilindro"],
+    "descripcion": "Cocina a gas Mabe con 4 quemadores, tamaño compacto ideal para cocinas pequeñas, incluye cilindro de gas.",
+    "link": "https://laganga.com/cocina-a-gas-mabe-4-quemadores-24-em6060fx3-cilindro-de-gas.html"
+  },
+  {
+    "id": "aud001",
+    "nombre": "Mini Componente Sony MHC-V43D//M",
+    "categoria": "audio",
+    "marca": "Sony",
+    "precio": 398.67,
+    "stock": 7,
+    "caracteristicas": ["Bluetooth", "Luces LED", "Potencia alta"],
+    "descripcion": "Sistema de audio Sony con efectos de luces LED, conectividad Bluetooth y sonido potente para fiestas.",
+    "link": "https://laganga.com/mini-componente-sony-mhc-v43d-m.html"
+  }
+]
