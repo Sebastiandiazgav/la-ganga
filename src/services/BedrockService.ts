@@ -6,9 +6,7 @@ interface BedrockServiceOptions {
 }
 
 interface ChatCompletionRequest {
-  content: string;
-  source?: string;
-  skip_chat_history?: boolean;
+  messages: { role: 'user' | 'assistant'; content: string }[];
 }
 
 interface ChatCompletionResponse {
@@ -31,16 +29,12 @@ class BedrockService {
     });
   }
 
-  async invokeModel(prompt: string): Promise<string> {
+  async invokeModel(messages: { role: 'user' | 'assistant'; content: string }[], systemPrompt: string): Promise<string> {
     const requestBody = {
       anthropic_version: 'bedrock-2023-05-31',
       max_tokens: 1000,
-      messages: [
-        {
-          role: 'user',
-          content: prompt,
-        },
-      ],
+      system: systemPrompt,
+      messages: messages,
     };
 
     const command = new InvokeModelCommand({
@@ -61,9 +55,8 @@ class BedrockService {
   }
 
   // Simulate the Sensay API structure for chat completions
-  async postChatCompletion(request: ChatCompletionRequest): Promise<ChatCompletionResponse> {
-    const prompt = request.content;
-    const response = await this.invokeModel(prompt);
+  async postChatCompletion(messages: { role: 'user' | 'assistant'; content: string }[], systemPrompt: string): Promise<ChatCompletionResponse> {
+    const response = await this.invokeModel(messages, systemPrompt);
     return { content: response };
   }
 }

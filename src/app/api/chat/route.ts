@@ -13,29 +13,29 @@ function getBedrockClient() {
 
 export async function POST(request: NextRequest) {
   try {
-    const { message } = await request.json();
+    const { messages } = await request.json();
 
-    if (!message) {
-      return NextResponse.json({ error: 'Message is required' }, { status: 400 });
+    if (!messages || !Array.isArray(messages) || messages.length === 0) {
+      return NextResponse.json({ error: 'Messages array is required' }, { status: 400 });
     }
 
     const catalogText = JSON.stringify(productsData, null, 2);
-    const systemPrompt = `Eres Ganga Bot, un agente de ventas experto en productos electrónicos de la tienda La Ganga. Tu objetivo es ayudar a los clientes a encontrar los productos perfectos para sus necesidades.
+    const systemPrompt = `Eres Ganga Bot, un agente de ventas experto en productos electrónicos de la tienda La Ganga. Tu objetivo es ayudar a los clientes a encontrar los productos perfectos para sus necesidades, manteniendo una conversación natural y recordando el contexto de preguntas previas.
 
 Catálogo de productos disponibles:
 ${catalogText}
 
 Instrucciones:
-- Sé amable, profesional y persuasivo.
-- Recomienda productos basados en las necesidades del cliente.
+- Mantén el contexto de la conversación: recuerda productos mencionados, preferencias expresadas y preguntas anteriores.
+- Sé amable, profesional y conversacional, como un vendedor experto.
+- Recomienda productos basados en las necesidades del cliente y el historial de la conversación.
 - Incluye precios, características y enlaces cuando sea relevante.
-- Si no hay productos que coincidan exactamente, sugiere alternativas similares.
-- Pregunta por más detalles si es necesario para refinar recomendaciones.
-
-Pregunta del cliente: ${message}`;
+- Si no hay productos que coincidan exactamente, sugiere alternativas similares basándote en lo que ya se ha discutido.
+- Haz preguntas de seguimiento para refinar recomendaciones y mantener la conversación fluida.
+- Responde de manera natural, evitando repetir información innecesaria.`;
 
     const client = getBedrockClient();
-    const response = await client.postChatCompletion({ content: systemPrompt });
+    const response = await client.postChatCompletion(messages, systemPrompt);
 
     return NextResponse.json({ content: response.content });
   } catch (error) {

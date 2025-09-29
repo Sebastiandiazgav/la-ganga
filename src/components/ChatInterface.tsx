@@ -33,7 +33,8 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ translations }) => {
     if (input.trim() === '' || isLoading) return;
 
     const userMessage: Message = { role: 'user', content: input };
-    setMessages(prev => [...prev, userMessage]);
+    const updatedMessages = [...messages, userMessage];
+    setMessages(updatedMessages);
 
     setInput('');
     setIsLoading(true);
@@ -46,7 +47,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ translations }) => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message: input }),
+        body: JSON.stringify({ messages: updatedMessages }),
       });
 
       if (!response.ok) {
