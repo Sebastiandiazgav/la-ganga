@@ -10,8 +10,10 @@ async function testBedrock() {
   const bedrock = new BedrockService();
 
   try {
-    const response = await bedrock.invokeModel('Hola, ¿puedes presentarte como un agente de ventas de productos electrónicos?');
-    console.log('Respuesta de Bedrock:', response);
+    const messages = [{ role: 'user' as const, content: 'Hola, ¿puedes presentarte como un agente de ventas de productos electrónicos?' }];
+    const systemPrompt = '';
+    const response = await bedrock.postChatCompletion(messages, systemPrompt);
+    console.log('Respuesta de Bedrock:', response.content);
   } catch (error) {
     console.error('Error en la prueba:', error);
   }

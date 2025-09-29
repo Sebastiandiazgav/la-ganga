@@ -30,8 +30,11 @@ ${chatHistory}
 
 Resumen:`;
 
+    const messages = [{ role: 'user' as const, content: summaryPrompt }];
+    const systemPrompt = '';
+
     const client = getBedrockClient();
-    const response = await client.postChatCompletion({ content: summaryPrompt });
+    const response = await client.postChatCompletion(messages, systemPrompt);
 
     return NextResponse.json({ content: response.content });
   } catch (error) {
