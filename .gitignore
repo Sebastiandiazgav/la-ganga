@@ -51,3 +51,6 @@ openapi-ts-error-*.log
 
 .env
 .env.local
+
+architecture.md
+architecture2.md
